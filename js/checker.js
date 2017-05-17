@@ -54,23 +54,38 @@ function checkIt() {
     message = "Your favorite subject is: History!";
   }
   else if (max == athletics) {
-    message = "Your favorite subject is: Athletics/Gym! Barbells is your favorite toy and you thrive to be the best!";
+    message = "Your favorite subject is: Athletics/Gym!";
   }
   else if (max == math) {
-    message = "Your favorite subect is: Math! You speak fluently in numbers and problems will never go unsolved!";
+    message = "Your favorite subect is: Math!";
   }
   else if (max == art) {
-    message = "Your favorite subject is: Art! You try new things and paint the world in vibrant colors!";
+    message = "Your favorite subject is: Art!";
   }
   else if (max == science) {
-    message = "Your favorite subject is: Science! Why and how things do stuff is pretty much what you think about all day long.";
+    message = "Your favorite subject is:";
   }
   else if (max == language) {
     message = "Your favorite subject is: Language! Parlez vous Français?";
   }
-var description;
+var des;
 if (max == history){
-  message2="You like learning about the past and the changes we made from our mistakes. Many people don't understand why history has to be a subject, but you know why it's so important.";
+  des="You like learning about the past and the changes we made from our mistakes. Many people don't understand why history has to be a subject, but you know why it's so important.";
+}
+else if (max == athletics) {
+  des = "Barbells are your favorite toy and you thrive to be the best!";
+}
+else if (max == math) {
+  des = "You speak fluently in numbers and you never let problems go unsolved!";
+}
+else if (max == art) {
+  des = "You like to try new things, create new and unique ideas, and paint the world in vibrant colors!";
+}
+else if (max == science) {
+  des = "How and why things do stuff is pretty much what you think about all day.";
+}
+else if (max == language) {
+  des = "Parlez vous Francais?";
 }
 var counts = "history: " + history + " math: " + math + " athletics: " + athletics + " science: " + science + " language: " + language;
 
@@ -82,8 +97,8 @@ var counts = "history: " + history + " math: " + math + " athletics: " + athleti
     document.getElementById('count').innerHTML = message;
     document.getElementById('count').style.fontSize = "xx-large";
 
-    //document.getElementById('description').innerHTML = message2;
-    //document.getElementById('description').style.fontSize = "medium";
-    //document.getElementById('description').style.color = "#767d89";
+    document.getElementById('description').innerHTML = des;
+    document.getElementById('description').style.fontSize = "medium";
+    document.getElementById('description').style.color = "#767d89";
   //document.getElementById('result').innerHTML = counts;
 }
